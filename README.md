@@ -6,7 +6,7 @@
 
 ### 前端开发
 - [状态管理](frontend-state-management.md)
-- [文件上传](frontend-file-upload.md)
+- [前端文件上传](frontend-file-upload.md)
 - [本地存储](frontend-local-storage.md)
 - [列表渲染](frontend-list-rendering.md)
 - [JavaScript API](frontend-javascript-api.md)
@@ -24,6 +24,7 @@
 - [云函数](cloud-function-development.md)
 - [数据库 api](cloud-database-development.md)
 - [云对象](cloud-object-development.md)
+- [云端文件上传](cloud-upload-file.md)
 - [JavaScript API](cloud-javascript-api.md)
 - [权限系统](cloud-permission-system.md)
 - [响应格式](cloud-response-format.md)
