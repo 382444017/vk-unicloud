@@ -95,17 +95,14 @@ module.exports = {
   async uploadAvatar(data = {}) {
     let { cloudPath } = data;
 
-    const extStorageManager = uniCloud.getExtStorageManager({
-      provider: "qiniu",
-      domain: "cdn.example.com"
-    });
-
-    // 获取上传参数，限制为图片格式
-    return extStorageManager.getUploadFileOptions({
+    // 使用 vk.uploadFile 获取上传参数，限制为图片格式
+    return vk.uploadFile.getOptions({
+      title: "上传头像",
       cloudPath: `avatars/${cloudPath}`,
       allowUpdate: false,
-      fsizeLimit: 1024 * 1024 * 2, // 限制2MB
-      mimeLimit: "image/jpeg;image/png;image/gif"
+      fileType: "image",
+      fileMaxSize: 2, // 限制2MB
+      mimeTypes: ["image/jpeg", "image/png", "image/gif"]
     });
   },
 
@@ -146,9 +143,12 @@ function generateProductImages(originalUrl) {
 ```javascript
 // 批量处理图片
 async function batchProcessImages(fileList) {
-    const extStorageManager = uniCloud.getExtStorageManager({
-        provider: "qiniu",
-        domain: "cdn.example.com"
+    // 使用 vk.uploadFile 获取上传参数
+    const uploadOptions = vk.uploadFile.getOptions({
+      title: "批量上传图片",
+      fileType: "image",
+      fileMaxSize: 5, // 限制5MB
+      mimeTypes: ["image/jpeg", "image/png", "image/gif", "image/webp"]
     });
 
     const results = [];

@@ -52,9 +52,12 @@ module.exports = {
   async processVideo(data = {}) {
     let { fileID } = data;
 
-    const extStorageManager = uniCloud.getExtStorageManager({
-      provider: "qiniu",
-      domain: "cdn.example.com"
+    // 使用 vk.uploadFile 获取上传参数，限制为视频格式
+    const uploadOptions = vk.uploadFile.getOptions({
+      title: "上传视频",
+      fileType: "video",
+      fileMaxSize: 100, // 限制100MB
+      mimeTypes: ["video/mp4", "video/avi", "video/mov", "video/mkv"]
     });
 
     // 获取视频信息
