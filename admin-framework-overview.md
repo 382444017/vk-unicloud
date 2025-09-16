@@ -85,5 +85,3 @@ VK-UniCloud管理端（vk-unicloud-admin）是基于 `uniapp` + `unicloud` + `un
 ├── pages.json            # 页面配置
 └── pages-dev.json        # 开发页面配置
 ```
-
-**重要说明**: 管理端不包含独立的云开发环境，通过配置关联到客户端的云开发环境，共享云函数和数据库。

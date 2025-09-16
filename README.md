@@ -7,7 +7,6 @@
 ### 前端开发
 - [状态管理](frontend-state-management.md)
 - [前端文件上传](frontend-file-upload.md)
-- [本地存储](frontend-local-storage.md)
 - [列表渲染](frontend-list-rendering.md)
 - [JavaScript API](frontend-javascript-api.md)
 - [用户中心API](frontend-user-center-api.md)
@@ -19,6 +18,15 @@
 - [本地临时会话缓存](frontend-session-storage.md) 
 - [扩展图标库](frontend-icon.md)
 - [清明节灰色页面实现方案](frontend-is-qingming.md)
+
+### 管理后台示例代码
+- [表单组件详细示例](admin-form-examples.md) - VK框架表单组件完整示例和用法
+- [弹窗组件示例](admin-dialog-examples.md) - 模态框、抽屉、消息提示示例
+- [详情组件示例](admin-detail-examples.md) - 详情展示、卡片布局示例
+- [上传组件示例](admin-upload-examples.md) - 文件上传、图片上传、拖拽上传示例
+- [Element UI 组件示例](admin-element-examples.md) - Element UI 表单、表格、弹窗组件示例
+- [图标组件示例](admin-icons-examples.md) - Element UI 图标展示和使用示例
+- [输入框组件示例](admin-input-examples.md) - 各种输入框类型和高级功能示例
 
 ### 云开发
 - [云函数](cloud-function-development.md)
@@ -45,14 +53,21 @@
 - [WebSocket高级用法](cloud-websocket-part2.md)
 - [常见问题解答](cloud-question.md)
 
+### 云函数示例代码
+- [云函数示例模板](template/云函数示例模板.md) - 云函数开发模板和规范
+- [数据库API示例文档](cloud-function-db-api.md) - 数据库增删改查操作示例
+- [开放平台API示例文档](cloud-function-openapi.md) - 微信等第三方平台集成示例
+- [基础测试函数文档](cloud-function-test-basic.md) - 单元测试和功能测试示例
+- [高级测试函数文档](cloud-function-test-advanced.md) - 集成测试和性能测试示例
+
 ### 扩展存储上的文件处理api
 - [图片处理](cloud-ext-storage-images.md)
 - [视频处理](cloud-ext-storage-videos.md)
 
 ### 管理后台
 - [框架概述](admin-framework-overview.md)
-- [表格组件](admin-table-component.md)
-- [表单组件](admin-form-component.md)
+- [表格组件](admin-table-component.md) - 表格组件示例
+- [表单组件](admin-form-component.md) - 表单组件示例
 - [页面模板](admin-page-templates.md)
 - [菜单配置](admin-menu-config.md)
 - [权限系统](admin-permission-system.md)
