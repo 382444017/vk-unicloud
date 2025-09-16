@@ -138,38 +138,6 @@ function generateProductImages(originalUrl) {
 
 ## 🔧 高级功能
 
-### 文件批量处理
-
-```javascript
-// 批量处理图片
-async function batchProcessImages(fileList) {
-    // 使用 vk.uploadFile 获取上传参数
-    const uploadOptions = vk.uploadFile.getOptions({
-      title: "批量上传图片",
-      fileType: "image",
-      fileMaxSize: 5, // 限制5MB
-      mimeTypes: ["image/jpeg", "image/png", "image/gif", "image/webp"]
-    });
-
-    const results = [];
-
-    for (let fileID of fileList) {
-        // 生成多种尺寸
-        const processed = {
-            original: fileID,
-            small: `${fileID}?imageView2/1/w/200/h/200/q/75`,
-            medium: `${fileID}?imageView2/1/w/400/h/400/q/80`,
-            large: `${fileID}?imageView2/1/w/800/h/800/q/85`,
-            webp: `${fileID}?imageView2/1/w/400/h/400/format/webp/q/80`
-        };
-
-        results.push(processed);
-    }
-
-    return results;
-}
-```
-
 ### 智能图片压缩
 
 ```javascript

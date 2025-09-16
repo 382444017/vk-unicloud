@@ -30,6 +30,20 @@
 - [响应格式](cloud-response-format.md)
 - [缓存系统](cloud-cache-system.md)
 - [框架概述](cloud-framework-overview.md)
+- [定时器（定时任务）](cloud-timer.md)
+- [固定出口IP](cloud-eip.md)
+- [使用axios等工具请求云函数或云对象](cloud-http-request.md)
+- [URL化之URL重写](cloud-url-rewrite.md)
+- [使用crypto进行加密解密](cloud-crypto-part1.md)
+- [AES加解密和RSA算法](cloud-crypto-part2.md)
+- [RSA签名和密钥生成](cloud-crypto-part3.md)
+- [表单验证规则](cloud-form-rules.md)
+- [SSE通道（Server-Sent Events）](cloud-sse-channel.md)
+- [可重入锁](cloud-reentrant-lock.md)
+- [速率限制](cloud-rate-limit.md)
+- [WebSocket支持](cloud-websocket-part1.md)
+- [WebSocket高级用法](cloud-websocket-part2.md)
+- [常见问题解答](cloud-question.md)
 
 ### 扩展存储上的文件处理api
 - [图片处理](cloud-ext-storage-images.md)
@@ -42,8 +56,6 @@
 - [页面模板](admin-page-templates.md)
 - [菜单配置](admin-menu-config.md)
 - [权限系统](admin-permission-system.md)
-- [管理后台规则](frontend-admin-rules.md)
-- [最佳实践](admin-best-practices.md)
 
 ### VK Pay支付
 - [介绍](vk-pay-introduction.md)
