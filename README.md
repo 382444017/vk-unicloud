@@ -12,29 +12,25 @@
 - [JavaScript API](frontend-javascript-api.md)
 - [用户中心API](frontend-user-center-api.md)
 - [工具函数](frontend-utility-functions.md)
-- [样式指南](frontend-style-guide.md)
 - [应用配置](frontend-app-config.md)
 - [拦截器配置](frontend-interceptor-config.md)
 - [全局参数](frontend-global-params.md)
-- [前端规则](frontend-rules.md)
-- [最佳实践](frontend-best-practices.md)
+- [本地持久化缓存](frontend-local-storage.md)
+- [本地临时会话缓存](frontend-session-storage.md) 
+- [扩展图标库](frontend-icon.md)
+- [清明节灰色页面实现方案](frontend-is-qingming.md)
 
 ### 云开发
-- [云函数开发](cloud-function-development.md)
-- [数据库开发](cloud-database-development.md)
-- [对象存储开发](cloud-object-development.md)
+- [云函数](cloud-function-development.md)
+- [数据库 api](cloud-database-development.md)
+- [云对象](cloud-object-development.md)
 - [JavaScript API](cloud-javascript-api.md)
 - [权限系统](cloud-permission-system.md)
 - [响应格式](cloud-response-format.md)
 - [缓存系统](cloud-cache-system.md)
-- [云规则](cloud-rules.md)
-- [最佳实践](cloud-best-practices.md)
 - [框架概述](cloud-framework-overview.md)
 
-### 扩展存储
-- [基础配置](ext-storage-basic-config.md)
-- [基础使用](cloud-ext-storage-basic.md)
-- [高级使用](cloud-ext-storage-advanced.md)
+### 扩展存储上的文件处理api
 - [图片处理](cloud-ext-storage-images.md)
 - [视频处理](cloud-ext-storage-videos.md)
 

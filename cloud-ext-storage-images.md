@@ -193,6 +193,4 @@ function smartImageCompress(imageUrl, fileSize) {
 
 ## 🔗 相关文档
 
-- [基础配置和文件管理](cloud-ext-storage-basic.md)
 - [视频处理API](cloud-ext-storage-videos.md)
-- [CDN和高级功能](cloud-ext-storage-advanced.md)

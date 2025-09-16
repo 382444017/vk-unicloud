@@ -44,7 +44,7 @@ icon: "database"
       "trim": "both",
       "componentForEdit": {
         "name": "uni-easyinput",
-极速开发        "props": {
+        "props": {
           "placeholder": "请输入名称"
         }
       }
@@ -124,7 +124,7 @@ VK框架提供了强大的数据库操作API `vk.baseDao`，封装了常用的CR
 | `findById` | `记录对象` 或 `null` | 抛出异常 | 直接返回记录数据 |
 | `findByWhereJson` | `记录对象` 或 `null` | 抛出异常 | 只返回第一条记录数据 |
 | `count` | `数量` | 抛出异常 | 直接返回记录总数 |
-| `getTableData` | `{code, rows, total}` | `{code, msg}` | 唯一使用标准格式的API |
+| `getTableData` | `{code, rows, total}` | `{code, msg}` | 万能表格数据查询 |
 
 #### 关键要点
 ```javascript

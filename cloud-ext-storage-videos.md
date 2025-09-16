@@ -85,4 +85,3 @@ module.exports = {
 
 - [基础配置和文件管理](cloud-ext-storage-basic.md)
 - [图片处理API](cloud-ext-storage-images.md)
-- [CDN和高级功能](cloud-ext-storage-advanced.md)
