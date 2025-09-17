@@ -1,6 +1,13 @@
 # VK Unicloud 开发文档
 
-本项目包含 VK Unicloud 平台的完整开发文档，涵盖前端开发、云函数开发、管理后台开发等多个方面。
+VK Unicloud 是一个全栈开发解决方案，提供从前端到云端的一站式开发体验。本项目包含 VK Unicloud 平台的完整开发文档，涵盖前端开发、云函数开发、管理后台开发等多个方面。
+
+## 🌟 平台特色
+
+- **全栈一体化**：统一的开发规范和 API 设计，前后端无缝协作
+- **组件化开发**：丰富的内置组件库，提高开发效率
+- **云原生架构**：基于云函数和云数据库，弹性扩展
+- **开箱即用**：完善的权限系统、支付系统、文件处理等功能
 
 ## 📚 文档分类
 
@@ -20,7 +27,6 @@
 - [清明节灰色页面实现方案](frontend-is-qingming.md)
 
 ### 管理后台示例代码
-- [表单组件详细示例](admin-form-examples.md) - VK框架表单组件完整示例和用法
 - [弹窗组件示例](admin-dialog-examples.md) - 模态框、抽屉、消息提示示例
 - [详情组件示例](admin-detail-examples.md) - 详情展示、卡片布局示例
 - [上传组件示例](admin-upload-examples.md) - 文件上传、图片上传、拖拽上传示例
@@ -30,7 +36,14 @@
 
 ### 云开发
 - [云函数](cloud-function-development.md)
-- [数据库 api](cloud-database-development.md)
+- [数据库 API](cloud-database-docs) - 拆分为多个子文档
+  - [1. 数据库基础操作](cloud-database-docs/1-database-basic-operations.md)
+  - [2. 万能连表查询](cloud-database-docs/2-database-selects.md)
+  - [3. 查询操作符详解](cloud-database-docs/3-database-query-operators.md)
+  - [4. 数据库聚合查询](cloud-database-docs/4-database-aggregation.md)
+  - [5. DAO层的作用及方法命名规范](cloud-database-docs/5-dao-layer.md)
+  - [6. 事务使用](cloud-database-docs/6-database-transactions.md)
+  - [7. 关于schema的说明](cloud-database-docs/7-database-schema.md)
 - [云对象](cloud-object-development.md)
 - [云端文件上传](cloud-upload-file.md)
 - [JavaScript API](cloud-javascript-api.md)
@@ -45,13 +58,15 @@
 - [使用crypto进行加密解密](cloud-crypto-part1.md)
 - [AES加解密和RSA算法](cloud-crypto-part2.md)
 - [RSA签名和密钥生成](cloud-crypto-part3.md)
-- [表单验证规则](cloud-form-rules.md)
+- [表单验证](cloud-form-rules.md)
 - [SSE通道（Server-Sent Events）](cloud-sse-channel.md)
 - [可重入锁](cloud-reentrant-lock.md)
 - [速率限制](cloud-rate-limit.md)
 - [WebSocket支持](cloud-websocket-part1.md)
 - [WebSocket高级用法](cloud-websocket-part2.md)
+- [中间件过滤器](cloud-middleware-filter.md)
 - [常见问题解答](cloud-question.md)
+- [云函数故障排除](cloud-function-troubleshooting.md)
 
 ### 云函数示例代码
 - [云函数示例模板](template/云函数示例模板.md) - 云函数开发模板和规范
@@ -66,11 +81,46 @@
 
 ### 管理后台
 - [框架概述](admin-framework-overview.md)
-- [表格组件](admin-table-component.md) - 表格组件示例
-- [表单组件](admin-form-component.md) - 表单组件示例
+- [表格组件](admin-table-component.md) - 万能表格组件
+- [表单组件](admin-form-component.md) - 万能表单组件
 - [页面模板](admin-page-templates.md)
 - [菜单配置](admin-menu-config.md)
 - [权限系统](admin-permission-system.md)
+- [内置组件详细](admin-components) - VK框架组件完整示例和用法
+  - [0-公共属性](admin-components/0-公共属性.md)
+  - [1-text-单行文本](admin-components/1-text-单行文本.md)
+  - [2-textarea-多行文本](admin-components/2-textarea-多行文本.md)
+  - [3-money-金额输入](admin-components/3-money-金额输入.md)
+  - [4-number-数字输入](admin-components/4-number-数字输入.md)
+  - [5-percentage-百分比输入](admin-components/5-percentage-百分比输入.md)
+  - [6-discount-折扣输入](admin-components/6-discount-折扣输入.md)
+  - [7-radio-单选](admin-components/7-radio-单选.md)
+  - [8-checkbox-多选](admin-components/8-checkbox-多选.md)
+  - [9-select-下拉选择](admin-components/9-select-下拉选择.md)
+  - [10-remote-select-远程下拉](admin-components/10-remote-select-远程下拉.md)
+  - [11-cascader-级联选择](admin-components/11-cascader-级联选择.md)
+  - [12-table-select-通过表格选择](admin-components/12-table-select-通过表格选择.md)
+  - [13-address-地址选择](admin-components/13-address-地址选择.md)
+  - [14-switch-开关](admin-components/14-switch-开关.md)
+  - [15-rate-评分](admin-components/15-rate-评分.md)
+  - [16-slider-滑块](admin-components/16-slider-滑块.md)
+  - [17-color-颜色选择](admin-components/17-color-颜色选择.md)
+  - [18-image-图片上传](admin-components/18-image-图片上传.md)
+  - [19-file-文件上传](admin-components/19-file-文件上传.md)
+  - [20-date-日期选择](admin-components/20-date-日期选择.md)
+  - [21-time-时间选择](admin-components/21-time-时间选择.md)
+  - [22-editor-富文本编辑器](admin-components/22-editor-富文本编辑器.md)
+  - [23-json-JSON编辑器](admin-components/23-json-JSON编辑器.md)
+  - [24-file-select-素材库选择](admin-components/24-file-select-素材库选择.md)
+  - [25-icon-图标选择](admin-components/25-icon-图标选择.md)
+  - [26-tree-select-树形选择](admin-components/26-tree-select-树形选择.md)
+  - [27-map-地图选址选择](admin-components/27-map-地图选址选择.md)
+  - [28-tag-标签](admin-components/28-tag-标签.md)
+  - [29-link-外部超链接](admin-components/29-link-外部超链接.md)
+  - [30-dialog-弹窗](admin-components/30-dialog-弹窗.md)
+  - [31-drawer-抽屉](admin-components/31-drawer-抽屉.md)
+  - [32-vk-data-menu-nav-左侧菜单](admin-components/32-vk-data-menu-nav-左侧菜单.md)
+  - [33-custom-editor-tinymce-多功能富文本编辑器](admin-components/33-custom-editor-tinymce-多功能富文本编辑器.md)
 
 ### VK Pay支付
 - [介绍](vk-pay-introduction.md)
@@ -83,8 +133,18 @@
 ## 🚀 快速开始
 
 1. 克隆本项目
-2. 使用 Context7 工具进行文档检索
-3. 根据需求查阅相关文档
+   ```bash
+   git clone <项目地址>
+   ```
+
+2. 安装 Context7 工具（如果需要文档检索功能）
+   ```bash
+   npm install -g context7
+   ```
+
+3. 浏览文档内容
+   - 直接打开 Markdown 文件阅读
+   - 或使用 Context7 进行文档检索
 
 ## 🔍 文档检索
 
@@ -95,10 +155,40 @@
 context7 search "你的搜索关键词"
 ```
 
-## 📝 贡献指南
+## 📖 阅读建议
 
-欢迎提交 Pull Request 来完善文档内容。
+1. 如果你是初学者，建议按以下顺序阅读：
+   - [前端开发](#前端开发)
+   - [云开发](#云开发)
+   - [管理后台](#管理后台)
+
+2. 如果你已有一定基础，可以直接查找需要的文档：
+   - 使用文档检索功能快速定位
+   - 浏览[文档分类](#文档分类)找到相关主题
+
+## 🤝 贡献指南
+
+我们欢迎社区贡献，帮助完善 VK Unicloud 文档：
+
+1. Fork 本项目
+2. 创建你的特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交你的更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 开启 Pull Request
+
+### 文档规范
+
+- 使用 Markdown 格式编写
+- 遵循统一的文档结构
+- 提供实际可运行的代码示例
+- 保持语言简洁明了
 
 ## 📄 许可证
 
 MIT License
+
+## 📞 联系方式
+
+如有问题或建议，请通过以下方式联系我们：
+- 提交 Issue
+- 发送邮件至 [维护者邮箱]
